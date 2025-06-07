@@ -30,7 +30,7 @@ class SimpleMLP(nn.Module):
 
 class AdvancedMLP(nn.Module):
     
-    def __init__(self, input_size: int = 2304, hidden_sizes: List[int] = [1024, 512, 256],
+    def __init__(self, input_size: int = 2304, hidden_sizes = [1024, 512, 256],
                  num_classes: int = 7, dropout_rate: float = 0.3, use_batch_norm: bool = True):
         super(AdvancedMLP, self).__init__()
         
